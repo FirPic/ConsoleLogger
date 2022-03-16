@@ -21,3 +21,5 @@ class ConsoleLogger{
     }
 
 }
+
+module.exports.consolelogger=ConsoleLogger;
