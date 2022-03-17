@@ -1,9 +1,10 @@
 const fs = require('fs');
 
-    const path='';
+    /*const path='';
+    exports.Path=path;*/
 
     function File(content){
-        fs.writeFile(path, content, {flag:'a+'}, err=>{
+        fs.writeFile('./debug.log', content, {flag:'a+'}, err=>{
             if(err) console.log(`File Error, the file not created : ${err}`);
         })
     }
@@ -12,14 +13,11 @@ const fs = require('fs');
         const date = new Date();
         const dateLog = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}|${date.getHours()}:${date.getMinutes()}:${date.getSeconds()}`;
         const log = `[${dateLog}][${lvl.toUpperCase()}]: ${str} \n`;
-        if(!path) console.log(`Path Error, the path is emplty`);
-        else if(!str) console.log(`Log Error, the content is empty `);
-            else if(!lvl) console.log(`Log Error, the level is empty`);
-                else{ File(log); console.log(log);}
+        /*if(!path) console.log(`Path Error, the path is emplty`);
+        else*/ 
+        if(!str) console.log(`Log Error, the content is empty `);
+        else if(!lvl) console.log(`Log Error, the level is empty`);
+            else{ File(log); console.log(log);}
         
     }
-
-
-
-exports.pth=path;
 exports.Log=Log;
