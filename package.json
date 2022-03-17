@@ -1,6 +1,6 @@
 {
   "name": "consolelogger",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "console logging module",
   "main": "index.js",
   "scripts": {
