@@ -1,7 +1,7 @@
 {
-  "name": "consolelogger",
+  "name": "fileandconsolelog",
   "version": "1.1.2",
-  "description": "console logging module",
+  "description": "console adn file logging  module",
   "main": "index.js",
   "scripts": {
 
