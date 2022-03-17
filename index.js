@@ -1,7 +1,12 @@
 const fs = require('fs');
 
     let path='./debug.log';
-    exports.Path=path;
+
+    function Path(pth){
+        path = pth;
+    }
+
+    exports.Path=Path;
 
     const date = new Date();
     const dateLog = `${date.getDay()}/${date.getMonth()}/${date.getFullYear()}|${date.getHours()}:${date.getMinutes()}:${getSeconds()}`;
