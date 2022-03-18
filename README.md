@@ -1,17 +1,17 @@
-# FCL
+# Localogger
 
 ## _File and Console Logger_
 
-FCL is a node module that logs to the console and to a file
+Localogger is a node module that logs to the console and to a file
 
 ## Installation
 
 
-Use [nodejs](https://nodejs.org/en/) to install fcl.
+Use [nodejs](https://nodejs.org/en/) to install Localogger.
 ```
-npm install --save fcl
+npm install --save Localogger
 ```
-And FCL require `fs` module
+And Localogger require `fs` module
 ```
 npm install --save fs
 ```
@@ -23,10 +23,10 @@ npm install --save fs
 the Path function can be declared if you want to put the log file in a specific folder, otherwise the file will be created at the root
 
 ```
-const fcl = require("fcl");
+const localogger = require("localogger");
 
 //the debug.log file will be created in the Log folder
-fcl.Path('./Log/debug.log');
+localogger.Path('./Log/debug.log');
 
 ```
 
@@ -34,22 +34,22 @@ fcl.Path('./Log/debug.log');
 
 the Log function needs two arguments, the first is the message and the second is the level of the message
 ```
-const fcl = require("fcl");
+const localogger = require("localogger");
 
-// The message will be that the FCL module is loaded and that this message is an info
-fcl.Log('fcl load','INFO');
+// The message will be that the Localogger module is loaded and that this message is an info
+localogger.Log('localogger load','INFO');
 ```
 
 ## Usage
 ```
-// import the FCL module
-const fcl = require("fcl");
+// import the Localogger module
+const localogger = require("localogger");
 
 // log file path
-fcl.Path('./debug.log');
+localogger.Path('./debug.log');
 
 // Log command
-fcl.Log('FCL start', 'INFO');
+localogger.Log('localogger start', 'INFO');
 
 ```
 
@@ -58,7 +58,7 @@ fcl.Log('FCL start', 'INFO');
 
 | Version | Installation |
 | ------- | ------------ |
-| 1.0.0 | `npm install --save fcl@1.0.0` |
+| 1.0.0 | `npm install --save localogger@1.0.0` |
 
 
 ## License

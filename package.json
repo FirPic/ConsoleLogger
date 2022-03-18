@@ -1,5 +1,5 @@
 {
-  "name": "fclogger",
+  "name": "localogger",
   "version": "1.0.0",
   "description": "console and file logging module",
   "main": "index.js",
