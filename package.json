@@ -1,7 +1,7 @@
 {
-  "name": "fcl",
+  "name": "fclogger",
   "version": "1.0.0",
-  "description": "console adn file logging module",
+  "description": "console and file logging module",
   "main": "index.js",
   "scripts": {
 
